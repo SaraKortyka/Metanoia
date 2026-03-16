@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html>
+
+<!--
+NAVIGATION BEARBEITEN
+
+Die Navigation besteht aus Hauptreitern und optionalen Untereinträgen (Dropdown-Menü).
+Ein Hauptreiter sieht immer aus dem <li></li> besagt, dass es eine liste ist, a dass es ein link zu einer anderen Seite ist. Dies da
+
+HAUPTREITER HINZUFÜGEN
+1. Kopiere die Beispielzeile unten.
+2. Füge sie an der gewünschten Stelle zwischen den anderen <li>...</li> ein.
+3. Passe den Dateinamen und den sichtbaren Text an.
+
+Beispiel Hauptreiter:
+<li><a href="hauptreiter_kern.html" data-nav="kern"> Kern </a></li>
+anpasse nur: _____________________                   ____
+"hauptreiter_kern.html" und den wert Kern
+
+HAUPTREITER LÖSCHEN
+Die komplette Zeile <li> ... </li> des Reiters entfernen.
+
+HAUPTREITER REIHENFOLGE ÄNDERN
+Die komplette <li> ... </li> Zeile an eine andere Stelle verschieben.
+Beispiel vorher
+<li><a href="hauptreiter_akademie.html" data-nav="akademie">Akademie</a></li>
+<li><a href="hauptreiter_treffpunkt.html" data-nav="treffpunkt">Treffpunkt</a></li>
+nachher
+<li><a href="hauptreiter_treffpunkt.html" data-nav="treffpunkt">Treffpunkt</a></li>
+<li><a href="hauptreiter_akademie.html" data-nav="akademie">Akademie</a></li>
+
+UNTERMENÜ (DROPDOWN) ERSTELLEN
+Wenn ein Hauptreiter Untereinträge haben soll, muss er so aussehen:
+
+<li class="dropdown">
+  <a href="hauptreiter_name.html">Name des Reiters</a>
+  <ul class="dropdown-menu">
+    <li><a href="hauptreiter_name__unterpunkt1.html">Unterpunkt 1</a></li>
+    <li><a href="hauptreiter_name__unterpunkt2.html">Unterpunkt 2</a></li>
+  </ul>
+</li>
+
+UNTEREINTRAG HINZUFÜGEN
+Eine neue Zeile innerhalb von <ul class="dropdown-menu"> ergänzen:
+
+<li><a href="hauptreiter_name__neuerpunkt.html">Neuer Unterpunkt</a></li>
+
+UNTEREINTRAG LÖSCHEN
+Die entsprechende <li> ... </li> Zeile im Bereich dropdown-menu entfernen.
+
+UNTEREINTRAG REIHENFOLGE ÄNDERN
+Die Zeilen innerhalb von <ul class="dropdown-menu"> verschieben.
+Beispiel vorher
+<li><a href="hauptreiter_kern__automatismen.html">Automatismen</a></li>
+<li><a href="hauptreiter_kern__illusionen.html">Illusionen</a></li>
+nachher
+<li><a href="hauptreiter_kern__illusionen.html">Illusionen</a></li>
+<li><a href="hauptreiter_kern__automatismen.html">Automatismen</a></li>
+
+WICHTIG
+- Nur den Text zwischen > und < ändern.
+- Die Zeichen < > / " nicht löschen.
+- Die Struktur <li> ... </li> immer vollständig stehen lassen.
+-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+			<a href="index.html">Metanoia<span>Akademie</span></a>
+		</div>
+  <nav class="main-nav">
+  <ul>
+
+    <li class="dropdown">
+      <a href="Pages/wis/Kern.html">Kern</a>
+      <ul class="dropdown-menu">
+        <li><a href="Pages/wis/Kern_Automatismen.html">Automatismen</a></li>
+        <li><a href="Pages/wis/Kern_Illusionen.html">Illusionen</a></li>
+        <li><a href="Pages/wis/Kern_Mechanismen.html">Mechanismen</a></li>
+        <li><a href="Pages/wis/Kern_Pragemuster.html">Prägemuster</a></li>
+        <li><a href="Pages/wis/Kern_Wesenskern.html">Wesenskern</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="Pages/wis/Akademie.html">Akademie</a>
+      <ul class="dropdown-menu">
+        <li><a href="Pages/wis/Akademie_Ueber_die_Akademie.html">Über die Akademie</a></li>
+        <li><a href="Pages/wis/Akademie_Ueber_uns.html">Über uns</a></li>
+		<li><a href="Pages/wis/Akademie_Bedienungsanleitung.html">Bedienungsanleitung</a></li>
+		<li><a href="Pages/wis/Akademie_Akademie_Kontakt.html">Kontakt</a></li>
+      </ul>
+    </li>
+	
+	<li class="dropdown">
+      <a href="Pages/wis/Treffpunkt.html">Treffpunkt</a>
+      <ul class="dropdown-menu">
+        <li><a href="Pages/wis/Treffpunkt_Menschen_in_hoerweite.html">Menschen in Hörweite</a></li>
+        <li><a href="Pages/wis/Treffpunkt_Kennenlernen.html">Kennenlernen</a></li>
+		<li><a href="Pages/wis/Treffpunkt_Videokonferenz.html">Videokonferenz</a></li>
+		<li><a href="Pages/wis/Treffpunkt_Retreat.html">Retreat</a></li>
+		<li><a href="Pages/wis/Treffpunkt_Erfahrungsbericht.html">Erfahrungsbericht</a></li>
+      </ul>
+    </li>
+
+	<li class="dropdown">
+      <a href="Pages/wis/Geschichten">Geschichten</a>
+      <ul class="dropdown-menu">
+        <li><a href="Pages/wis/Geschichten_Interviews.html">Interviews</a></li>
+        <li><a href="Pages/wis/Geschichten_Anekdoten.html">Anekdoten</a></li>
+		<li><a href="Pages/wis/Geschichten_Bedienungsanleitung.html">Bedienungsanleitung</a></li>
+		<li><a href="Pages/wis/Geschichten_Erkenntnisse_aus_dem_Umfeld.html">Erkenntnisse aus dem Umfeld</a></li>
+      </ul>
+    </li>
+	
+	<li class="dropdown">
+      <a href="Pages/wis/Werk.html">Werk</a>
+      <ul class="dropdown-menu">
+        <li><a href="Pages/wis/Werk_Band_I.html">Band I: Historischer Zeitstrahl</a></li>
+        <li><a href="Pages/wis/Werk_Band_II.html">Band II: Persönlicher Entwicklungspfad</a></li>
+		<li><a href="Pages/wis/Werk_Exkurse.html">Exkurse</a></li>
+		<li><a href="Pages/wis/Werk_Download.html">Download</a></li>
+		<li><a href="Pages/wis/Werk_Glossar.html">Gloassar</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</header>
+
+</body>
+</html>

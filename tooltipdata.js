@@ -1,0 +1,5 @@
+﻿const TooltipData = {
+  "Biologische Evolution": "<span style=\"font-size:11pt;color:#000000;\">Hier kann ein mehrzeiliger<br>Text rein<br>Wir können auch vereinbaren, dass ich Stile wie </span><span style=\"font-weight:bold;font-size:11pt;color:#000000;\">fett</span><span style=\"font-size:11pt;color:#000000;\"> oder die</span><span style=\"font-size:18pt;color:#000000;\"> Schriftgröße</span><span style=\"font-size:11pt;color:#000000;\"> oder </span><span style=\"font-size:11pt;color:#4472C4;\">Farbe</span><span style=\"font-size:11pt;color:#000000;\"> übernehme</span>",
+  "Automatismen": "<span style=\"font-size:11pt;color:#000000;\">Handlungsautomatismus: Wir handeln, bevor wir denken<br>Adaptionsautomatismus: Das system lernt ohne unser Zutun</span>",
+  "Automatismus": "<span style=\"font-size:11pt;color:#000000;\">Handlungsautomatismus: Wir handeln, bevor wir denken<br>Adaptionsautomatismus: Das system lernt ohne unser Zutun</span>"
+};
